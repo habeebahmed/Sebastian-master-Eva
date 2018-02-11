@@ -70,7 +70,8 @@ def wolframalpha_query_image(question):
 
     if image != None:
         #print(image)
-        open_image.open_image(image)
+        gui = open_image.gui()
+        gui.open_image(image)
     else:
         print('Image not found')
     
